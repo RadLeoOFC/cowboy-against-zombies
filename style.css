@@ -1,0 +1,60 @@
+.playfield {
+  height: 400px;
+  width: 1600px;
+  border-bottom: 1px solid #000;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+#zombie {
+  height: 260px;
+  width: 460px;
+  background-image: url("images/Zombie.png");
+  background-size: 460px 260px;
+  position: relative;
+  top: 100px;
+  left: 800px;
+  animation: zombieMov 10s infinite linear;
+}
+
+#cowboy {
+  width: 460px;
+  height: 260px;
+  background-image: url("images/Cowboy.png");
+  background-size: 460px 260px;
+  position: relative;
+  top: -150px;
+  left: -150px;
+}
+
+#bullet {
+  width: 60px;
+  height: 20px;
+  background-image: url("images/Bullet.png");
+  background-size: 60px 20px;
+  position: relative;
+  top: -360px;
+  left: 100px;
+}
+
+.shoot {
+  animation: bulletMov 1s infinite linear;
+}
+
+@keyframes zombieMov {
+  0% {
+    left: 1300px;
+  }
+  100% {
+    left: -100px;
+  }
+}
+
+@keyframes bulletMov {
+  0% {
+    left: 100px;
+  }
+  100% {
+    left: 1300px;
+  }
+}
