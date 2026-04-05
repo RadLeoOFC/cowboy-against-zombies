@@ -11,8 +11,8 @@
   width: 460px;
   background-image: url("images/Zombie.png");
   background-size: 460px 260px;
-  position: relative;
-  top: 100px;
+  position: absolute;
+  top: 250px;
   left: 800px;
   animation: zombieMov 10s infinite linear;
 }
@@ -22,9 +22,9 @@
   height: 260px;
   background-image: url("images/Cowboy.png");
   background-size: 460px 260px;
-  position: relative;
-  top: -150px;
-  left: -150px;
+  position: absolute;
+  top: 250px;
+  left: -50px;
 }
 
 #bullet {
@@ -32,9 +32,9 @@
   height: 20px;
   background-image: url("images/Bullet.png");
   background-size: 60px 20px;
-  position: relative;
-  top: -360px;
-  left: 100px;
+  position: absolute;
+  top: 300px;
+  left: 200px;
 }
 
 .shoot {
